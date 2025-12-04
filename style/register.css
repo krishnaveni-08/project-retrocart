@@ -1,0 +1,148 @@
+    
+    
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    font-family: "Press Start 2P", cursive; 
+
+    }
+span{
+  color: red;
+
+}
+
+    .container {
+      background: #000;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      padding: 30px 10px;
+    }
+
+    .register-box {
+      width: 750px;
+      background: #111;
+      border: 2px solid #ffd700;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+      padding: 25px 30px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #ffd700;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    /* Tabs */
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ffd700;
+    }
+
+    .tab {
+      padding: 10px 25px;
+      cursor: pointer;
+      font-weight: 600;
+      color: #ffd700;
+      border-bottom: 2px solid transparent;
+      transition: 0.3s;
+    }
+
+    .tab.active {
+      border-bottom: 2px solid #ffd700;
+      color: #fff;
+    }
+
+    form {
+      display: none;
+    }
+
+    form.active {
+      display: block;
+    }
+
+    form label {
+      display: block;
+      margin: 6px 0 4px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    form input,
+    form select,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border-radius: 8px;
+      border: 1px solid #ffd700;
+      background: #000;
+      color: #fff;
+      outline: none;
+    }
+
+    form input:focus,
+    form select:focus,
+    form textarea:focus {
+      border-color: #fff;
+    }
+
+    .row {
+      display: flex;
+      gap: 12px;
+    }
+
+    .col {
+      flex: 1;
+    }
+
+    .password-field {
+      position: relative;
+    }
+
+    .password-field input {
+      padding-right: 40px;
+    }
+
+    .toggle-password {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      color: #ffd700;
+      font-size: 18px;
+    }
+
+    button {
+      background: #ffd700;
+      color: #000;
+      border: none;
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #fff;
+    }
+
+    @media (max-width:720px) {
+      .row {
+        flex-direction: column;
+      }
+
+      .register-box {
+        width: 100%;
+      }
+    }
